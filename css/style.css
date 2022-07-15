@@ -79,26 +79,13 @@ body .invoice-container .invoice-wrapper .inner-logo img {
 }
 
 body .invoice-container .invoice-wrapper .invoice-content {
-	display: flex;
-	height: 360px;
-	justify-content: center;
-	align-items: center;
-	overflow-y: scroll;
-}
-
-body .invoice-container .invoice-wrapper .invoice-content::-webkit-scrollbar {
-    width: 7px;
-}
-
-body .invoice-container .invoice-wrapper .invoice-content::-webkit-scrollbar-thumb {
-    background: #777;
-    border-radius: 50px;
+	height: 560px;
 }
 
 body .invoice-container .invoice-wrapper .invoice-content table {
 	table-layout: fixed;
-	margin: 10px 20px 0;
-	width: 700px;
+	margin: 10px 10px 0;
+	width: 100%;
 	font-size: 18px;
 	font-family: 'Courier New', Courier, monospace;
 	color: #777;
