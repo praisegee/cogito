@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: #2342320d;
+	background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+body .invoice-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 200;
+}
+
+body .invoice-container .invoice-wrapper {
+	width: 60%;
+	height: 90%;
+	border-radius: 8px;
+	background: #ccc;
+	position: relative;
+}
+
+body .invoice-container .invoice-wrapper .inner-logo #close {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	right: 10px;
+	z-index: 300;
+	font-size: 25px;
+	font-weight: 700;
+	color: #444;
+	cursor: pointer;
+}
+
+body .invoice-container .invoice-wrapper .inner-logo #print {
+	position: absolute;
+	display: inline-block;
+	top: 10px;
+	left: 20px;
+	z-index: 300;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 10px;
+}
+
+body .invoice-container .invoice-wrapper hr {
+	border: none;
+	border-top: 1px solid #888;
+}
+
+body .invoice-container .invoice-wrapper h2 {
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+	padding: 8px;
+	color: #666;
+}
+
+body .invoice-container .invoice-wrapper .inner-logo {
+	display: flex;
+	justify-content: center;
+}
+
+body .invoice-container .invoice-wrapper .inner-logo img {
+	width: 100px;
+	height: 100px;
+}
+
+body .invoice-container .invoice-wrapper .invoice-content {
+	display: flex;
+	height: 360px;
+	justify-content: center;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+body .invoice-container .invoice-wrapper .invoice-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+body .invoice-container .invoice-wrapper .invoice-content::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 50px;
+}
+
+body .invoice-container .invoice-wrapper .invoice-content table {
+	table-layout: fixed;
+	margin: 10px 20px 0;
+	width: 700px;
+	font-size: 18px;
+	font-family: 'Courier New', Courier, monospace;
+	color: #777;
+}
+
+body .invoice-container .invoice-wrapper .invoice-content table th,
+body .invoice-container .invoice-wrapper .invoice-content table td {
+	text-align: center;
+	word-break: break-word;
+	padding: 5px;
+	width: 50px;
+}
+
+
+
+/* body header.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	height: 50px;
+	margin: 50px auto 0;
+	border-radius: 5px;
+	background-color: #235faa;
+}
+
+body header.nav .controls {
+	display: flex;
+	width: 90px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+body header.nav .controls {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	z-index: 100;
+	display: inline-block;
+}
+
+body header.nav .controls #1 {
+	background-color: red;
+}
+
+body header.nav .controls #2 {
+	background-color: yellow;
+}
+
+body header.nav .controls #1 {
+	background-color: green;
+} */
+
+.container {
+	width: 40%;
+	margin: auto;
+}
+
+.form form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	margin-top: -40px;
+}
+
+.form .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form .logo img {
+	width: 200px;
+	height: 200px;
+}
+
+.form form input {
+	margin: 12px 0;
+	height: 40px;
+	outline: none;
+	font-size: 20px;
+	padding-left: 12px;
+}
+
+.form form textarea {
+	margin: 12px 0;
+	outline: none;
+	font-size: 20px;
+	padding-left: 12px;
+}
+
+.form form div input {
+	width: 49.5%;
+	margin: 12px 0;
+	height: 40px;
+	outline: none;
+	font-size: 20px;
+	padding-left: 12px;
+}
+
+.form form div input[type="checkbox"] {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	outline: none;
+	margin: 0 20px;
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.form form div p {
+	font-size: 20px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.form form .payment {
+	display: none;
+}
+
+.form form button {
+	margin: 12px 0;
+	width: 100%;
+	height: 40px;
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #6544c9;
+	color: #6544c9;
+	background: #c2b7e2;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.form form button:hover {
+	color: #300e96;
+	background: #9984d8;
+	border: none;
+}
+
+#label {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+@media (max-width: 991px) {
+	.container {
+		width: 60%;
+	}
+	body .invoice-container .invoice-wrapper {
+		width: 70%;
+	}
+}
+
+@media (max-width: 795px) {
+	.container {
+		width: 60%;
+	}
+	.form form div input {
+		width: 100%;
+	}
+	body .invoice-container .invoice-wrapper {
+		width: 70%;
+	}
+}
+
+@media (max-width: 662px) {
+	.container {
+		width: 70%;
+	}
+	.form form div input {
+		width: 100%;
+	}
+	body .invoice-container .invoice-wrapper {
+		width: 80%;
+	}
+}
+
+@media (max-width: 420px) {
+	.container {
+		width: 80%;
+	}
+	body .invoice-container .invoice-wrapper {
+		width: 80%;
+	}
+}
