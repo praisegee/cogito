@@ -99,46 +99,6 @@ body .invoice-container .invoice-wrapper .invoice-content table td {
 	width: 50px;
 }
 
-
-
-/* body header.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-	height: 50px;
-	margin: 50px auto 0;
-	border-radius: 5px;
-	background-color: #235faa;
-}
-
-body header.nav .controls {
-	display: flex;
-	width: 90px;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-body header.nav .controls {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	z-index: 100;
-	display: inline-block;
-}
-
-body header.nav .controls #1 {
-	background-color: red;
-}
-
-body header.nav .controls #2 {
-	background-color: yellow;
-}
-
-body header.nav .controls #1 {
-	background-color: green;
-} */
-
 .container {
 	width: 40%;
 	margin: auto;
