@@ -1,4 +1,4 @@
-
+// get all the necessary DOMs.
 const form = document.getElementById('form');
 
 const clientName = document.getElementById('client_name');
@@ -13,6 +13,7 @@ const invoiceContainer = document.getElementById('invoice-container');
 
 const isFullPay = document.getElementById('is_full_pay');
 
+// toggle payment option form.
 isFullPay.addEventListener("click", function() {
 	if (this.checked) {
 		payment.style.display = "block";
@@ -21,10 +22,11 @@ isFullPay.addEventListener("click", function() {
 	}
 })
 
-
+// Handles the data cleaning
 function getData() {
 	const data = {
 		"clientName": (function() {
+			// clean client name to be title case.
 			try {
 				let nameVar = String(clientName.value).split(" ");
 				for (let i = 0; i < nameVar.length; i++) {
@@ -38,6 +40,7 @@ function getData() {
 			}
 		}),
 		"eventName": (function() {
+			// clean event name to be title case.
 			try {
 				let nameVar = String(eventName.value).split(" ");
 				for (let i = 0; i < nameVar.length; i++) {
@@ -81,6 +84,7 @@ function getData() {
 		}),
 	}
 
+	// the final cleaned data
 	let payload = {
 		"sheet1": {
 			"date": data.date,
@@ -106,26 +110,28 @@ function getData() {
 // console.log(data.VAT())
 // console.log(data.invoiceNo())
 
-
+// handles the submition
 form.addEventListener("submit", function(e) {
 	e.preventDefault();
 	const data = JSON.stringify(getData());
-	console.log(data);
-	console.log("Incdc", invoiceContainer);
+	// console.log(data);
+	// console.log("Incdc", invoiceContainer);
 	invoiceContainer.style.display = "flex";
 	invoiceContainer.innerHTML = `
 												<div>
 													<img src="img/loader.gif" alt="" />
 												</div>
 											`;
-	handleResquest("POST", data);
+	handleRequest("POST", data);
 	form.reset();
   })
 
-
+// request obj
 const xhr = new XMLHttpRequest();
 
-function handleResquest(method, data) {
+
+// handles the request
+function handleRequest(method, data) {
 	const url = "https://api.sheety.co/2620d6b350ebd0c7460aef489947c6a6/2022ScheduleSalesInvoice/sheet1/";
 
 	xhr.open(method, url, true);
@@ -210,6 +216,7 @@ function handleResquest(method, data) {
 
 	};
 
+	// Make the API call to sheety
 	if (method == "POST") {
 		if (data) {
 			xhr.setRequestHeader("Accept", "application/json");

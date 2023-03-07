@@ -193,43 +193,43 @@ body .invoice-container .invoice-wrapper .invoice-content table td {
 }
 
 @media (max-width: 991px) {
-	.container {
-		width: 60%;
-	}
 	body .invoice-container .invoice-wrapper {
 		width: 70%;
+	}
+	.container {
+		width: 60%;
 	}
 }
 
 @media (max-width: 795px) {
+	body .invoice-container .invoice-wrapper {
+		width: 70%;
+	}
 	.container {
 		width: 60%;
 	}
 	.form form div input {
 		width: 100%;
 	}
-	body .invoice-container .invoice-wrapper {
-		width: 70%;
-	}
 }
 
 @media (max-width: 662px) {
+	body .invoice-container .invoice-wrapper {
+		width: 80%;
+	}
 	.container {
 		width: 70%;
 	}
 	.form form div input {
 		width: 100%;
 	}
-	body .invoice-container .invoice-wrapper {
-		width: 80%;
-	}
 }
 
 @media (max-width: 420px) {
-	.container {
+	body .invoice-container .invoice-wrapper {
 		width: 80%;
 	}
-	body .invoice-container .invoice-wrapper {
+	.container {
 		width: 80%;
 	}
 }

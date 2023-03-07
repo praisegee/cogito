@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-    <div id="invoice-container" class="invoice-container">
-        <!-- invoice wrapper goes here -->
-    </div>
-    <div class="container">
-        <div class="form">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <form id="form">
-                <input type="text" id="client_name" name="client_name" required placeholder="Client Name: ">
-                <input type="text" id="event_name" name="event_name" required placeholder="Name of Event:">
-                <textarea cols="20" rows="7" id="discription" placeholder="Discription: "></textarea>
-                <div>
-                    <input type="date" id="event_date" name="event_date" placeholder="Date of Event: ">
-                    <input type="number" id="event_cost" name="event_cost" required placeholder="Cost of Event: ">
-                </div>
-                <div>
-                    <input type="checkbox" id="is_full_pay" name="is_full_pay"><span id="label">Pay Part Payment?</span> 
-                </div>
-                <div id="payment" class="payment">
-                    <input type="number" id="first_pay" name="first_pay" placeholder="First Payment: ">
-                    <input type="number" id="second_pay" name="second_pay" placeholder="Second Payment: ">
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
+	<div id="invoice-container" class="invoice-container">
+		<!-- invoice wrapper goes here -->
+	</div>
+	<div class="container">
+		<div class="form">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<form id="form">
+				<input type="text" id="client_name" name="client_name" required placeholder="Client Name: ">
+				<input type="text" id="event_name" name="event_name" required placeholder="Name of Event:">
+				<textarea cols="20" rows="7" id="discription" placeholder="Discription: "></textarea>
+				<div>
+					<input type="date" id="event_date" name="event_date" placeholder="Date of Event: ">
+					<input type="number" id="event_cost" name="event_cost" required placeholder="Cost of Event: ">
+				</div>
+				<div>
+					<input type="checkbox" id="is_full_pay" name="is_full_pay"><span id="label">Pay Part Payment?</span>
+				</div>
+				<div id="payment" class="payment">
+					<input type="number" id="first_pay" name="first_pay" placeholder="First Payment: ">
+					<input type="number" id="second_pay" name="second_pay" placeholder="Second Payment: ">
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
 
-    <script src="js/script.js" type="text/javascript"></script>
-    
+	<script src="js/script.js" type="text/javascript"></script>
+
 </body>
+
 </html>
