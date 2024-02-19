@@ -7,3 +7,9 @@
 
 Check the [Demo](https://thriving-caramel-e0e2e6.netlify.app/).
 And the [Sheet](https://docs.google.com/spreadsheets/d/1G_z5spqxDOf5ZJ_SdXJyqhCiXUU1XB3AlwdlJxODGYc/edit#gid=0) for the records.
+
+### To clone; Run:
+
+```bash
+git clone https://github.com/maestrohorlar/cogito.git
+```
