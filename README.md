@@ -1,7 +1,14 @@
 # cogito
 
 ### An event booker web app.
+
 #### Using HTML, CSS and JavaScript only with API calls. The frontend is connected to a google spreadsheets for the data record.
+
+### To clone; Run:
+
+```bash
+git clone https://github.com/Debonair92/cogito.git
+```
 
 <br>
 
